@@ -1,7 +1,7 @@
 import React from 'react'
 import Artbeat from '../assets/Artbeat.png'
 import Cloud from '../assets/Cloud.png'
-import Facebook from '../assets/facebook.png'
+import Projectai from '../assets/projectai.png'
 import Netflix from '../assets/Netflix.png'
 import Ui1 from '../assets/ui1.png'
 import Ui2 from '../assets/ui2.png'
@@ -22,7 +22,7 @@ const Works = () => {
 
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="https://artbeat.tech/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg' >
                                     Demo 
                                 </button>
@@ -42,7 +42,7 @@ const Works = () => {
 
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="https://melodic-taiyaki-4e80ee.netlify.app/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg' >
                                     Demo 
                                 </button>
@@ -62,7 +62,7 @@ const Works = () => {
 
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="https://wondrous-sherbet-941e24.netlify.app/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg' >
                                     Demo 
                                 </button>
@@ -75,14 +75,14 @@ const Works = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage:`url(${Facebook})`}} className='shadow-lg shadow-[#040c16] justify-center items-center mx-auto group container rounded-md content-div'>
+                <div style={{backgroundImage:`url(${Projectai})`}} className='shadow-lg shadow-[#040c16] justify-center items-center mx-auto group container rounded-md content-div'>
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
-                            SIGN IN PAGE 
+                            Project Alan ai news app
 
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="https://rococo-biscochitos-e51773.netlify.app/">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg' >
                                     Demo 
                                 </button>
