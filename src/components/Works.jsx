@@ -8,7 +8,7 @@ import Ui2 from '../assets/ui2.png'
 
 const Works = () => {
   return (
-    <div className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+    <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
         <div className='max-w-[1000px] mx-auto p-4 w-full h-full flex flex-col justify-center'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-white'>Work</p>
