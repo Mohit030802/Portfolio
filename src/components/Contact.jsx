@@ -14,18 +14,14 @@ const Contact = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        // Check if the submission was successful
         if (data.result === 'success') {
-          // Show success toast
           toast.success('Form submitted successfully!', { position: toast.POSITION.TOP_CENTER });
         } else {
-          // Show error toast
           toast.error('Form submission failed. Please try again later.', { position: toast.POSITION.TOP_CENTER });
         }
       })
       .catch((error) => {
         console.log(error);
-        // Show error toast
         toast.success('I have received your message!', { position: toast.POSITION.TOP_CENTER });      });
   }
   
