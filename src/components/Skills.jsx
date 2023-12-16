@@ -10,7 +10,7 @@ import Figma from '../assets/figma.svg'
 
 const Skills = () => {
     return (
-        <div name='skills' className='bg-[#0a192f] w-full h-screen text-gray-300'>
+        <div name='skills' className='w-full h-screen text-gray-300'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <div>
                     <p className='text-4xl font-bold border-b-4 inline'>Skills</p>
