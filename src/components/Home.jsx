@@ -70,18 +70,37 @@ const Home = () => {
         </div>
 
         <div className='flex justify-center items-center '>
-          <motion.div
-            className='absolute bg-white w-[25%] h-[40%] transform rotate-90 z-0 rounded-md shadow-[5px_5px_20px_rgb(204,214,246)]'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
-          />
+          <motion.div initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.25, duration: 2 }} variants={fadeInVariants}>
+
+            <motion.div initial='hidden'
+            animate='visible'
+            transition={{ delay: 0.5, duration: 2 }} variants={fadeInVariants}
+              className='absolute bg-white w-[22%] h-[10%] transform rotate-0 z-0 rounded-md shadow-[5px_5px_20px_rgb(204,214,246)]'
+              
+            />
+            <motion.div initial='hidden'
+            animate='visible'
+            transition={{ delay: 0.75, duration: 2 }} variants={fadeInVariants}
+              className='absolute bg-white w-[22%] h-[10%] transform rotate-45 z-0 rounded-md shadow-[5px_5px_20px_rgb(204,214,246)]'
+            />
+            <motion.div initial='hidden'
+            animate='visible'
+            transition={{ delay: 1, duration: 2 }} variants={fadeInVariants}
+              className='absolute bg-white w-[22%] h-[10%] transform rotate-90 z-0 rounded-md shadow-[5px_5px_20px_rgb(204,214,246)]'
+            />
+            < motion.div initial='hidden'
+            animate='visible'
+            transition={{ delay: 1.25, duration: 2 }} variants={fadeInVariants}
+              className='absolute bg-white w-[22%] h-[10%] transform -rotate-45 z-0 rounded-md shadow-[5px_5px_20px_rgb(204,214,246)]'
+            />
+          </motion.div>
           <motion.div
             className='flex justify-center items-center z-5 '
-
           >
 
-            <motion.img className='w-[40%] h-[20%] drop-shadow-2xl shadow-2xl rounded-md  ' variants={fadeInVariants} src={me} alt="" />
+            <motion.img className='w-[40%] h-[20%] drop-shadow-2xl  rounded-md shadow-[5px_5px_20px_rgb(204,214,246)] ' variants={fadeInVariants} src={me} alt="" />
           </motion.div>
         </div>
       </motion.div>
