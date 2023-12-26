@@ -1,25 +1,18 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-const cardVariants = {
-    offscreen: {
-        y: 30,
-    },
-    onscreen: {
-        y: 50,
-        transition: {
-            
-            bounce: 0.4,
-            duration: 2,
-        },
-    },
-};
+import React, { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
+
+
 const About = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
     return (
-        <motion.div
-            initial={{opacity:0}}
-            whileInView={{opacity:1}}
-            viewport={{ once: true}}  name='about' className='w-full h-screen  text-gray-300'>
-            <div className='flex flex-col justify-center items-center w-full h-full' >
+        <div ref={ref}
+            style={{
+                transform: isInView ? "none" : "translateX(-200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+            }} name='about' className='w-full h-screen  text-gray-300'>
+            <div  className='flex flex-col justify-center items-center w-full h-full' >
                 <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>
                     <div className='sm:text-right pb-8 pl-4'>
                         <p className='text-4xl font-bold inline border-b-4 border-white'>About</p>
@@ -44,7 +37,7 @@ const About = () => {
 
             </div>
 
-        </motion.div>
+        </div>
     )
 }
 
